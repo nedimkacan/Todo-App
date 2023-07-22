@@ -7,11 +7,15 @@
       <div class="inpput-group">
         <input class="form-control" #todoText placeholder="New Todo Add" />
         <button
-          class="btn btn-primary mt-2 mb-2 col-8"
+          class="btn btn-primary mt-2 mb-2 col-12"
           (click)="addItem(todoText.value); todoText.value = ''"
         >
           Add
         </button>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" [(ngModel)]="isDisplay" class="custom-control-input my-3" id="displayAll">
+        <label for="displayAll">Display All</label>
       </div>
       <table class="table table-striped table-bordered">
         <thead>
