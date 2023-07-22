@@ -6,9 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Projesi yapıyoruz bu data değişkenden geliyor.';
-  name = 'Mehmet';
-  surname = 'Kara';
-  job = "Software Developer";
-  age = 30;
+  name = 'Nedim';
+  surname = 'Kacan';
+  items=[
+    {description: 'Breakfast', action: "No"},
+    {description: 'Lunch', action: "Yes"},
+    {description: 'Dinner', action: "Yes"},
+    {description: 'Sleep', action: "No"},
+    {description: 'Work', action: "No"},
+    {description: 'Study', action: "Yes"},
+    {description: 'Play', action: "No"},
+    {description: 'Read', action: "Yes"},
+    {description: 'Watch', action: "No"},
+    {description: 'Listen', action: "Yes"},
+    {description: 'Walk', action: "No"},
+    {description: 'Run', action: "No"},
+  ]
 }

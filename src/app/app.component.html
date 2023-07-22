@@ -2,7 +2,7 @@
   <div class="row justify-content-center align-items-center">
     <div class="col-md-8">
       <h3 class="bg-primary text-white pt-2 pb-3 text-center">
-        Nedim Kacan Todo Example
+        {{ name }} {{ surname }} Todo Example
       </h3>
       <div class="inpput-group">
         <input class="form-control" placeholder="New Todo Add" />
@@ -16,17 +16,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Kahvaltı</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>Kitap Oku</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Yemek</td>
-            <td>No</td>
+          <tr *ngFor="let item of items">
+            <td>{{ item.description }}</td>
+            <td>{{ item.action }}</td>
           </tr>
         </tbody>
       </table>
